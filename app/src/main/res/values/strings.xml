@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Intermediate One</string>
+    <string name="log_in">Log In</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_title">Hello, Welcome!</string>
+    <string name="login">Masuk</string>
+    <string name="title_signup_page">Mohon isi data anda di bawah ini!</string>
+    <string name="nama">Nama</string>
+    <string name="signup">Daftar</string>
+    <string name="getStarted">Get started!</string>
+    <string name="lorem_ipsum">lorem ipsum\n</string>
+    <string name="dateStory">Dibuat pada:</string>
+    <string name="detail_title">Detail</string>
+    <string name="homePage_title">Discover</string>
+    <string name="addStory_title">Add Story</string>
+    <string name="btn_upload">Upload</string>
+    <string name="btn_camera">Camera</string>
+    <string name="btn_gallery">Galeri</string>
+    <string name="tell">Tell me your story...</string>
+    <string name="share">Bagikan cerita anda</string>
+    <string name="empty_image_warning">Silahkan masukan berkas gambar terlebih dahulu</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="test_map">Map test</string>
+    <string name="normal_type">Normal</string>
+    <string name="satellite_type">Satellite</string>
+    <string name="terrain_type">Terrain</string>
+    <string name="hybrid_type">Hybrid</string>
+</resources>

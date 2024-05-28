@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp">
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/btn_upload"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/pale_pink"
+            app:layout_constraintEnd_toEndOf="@+id/edt_addStory_desc"
+            app:layout_constraintStart_toStartOf="@+id/edt_addStory_desc"
+            app:layout_constraintTop_toBottomOf="@+id/edt_addStory_desc" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/share" />
+
+        <ImageView
+            android:id="@+id/iv_addStories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:adjustViewBounds="true"
+            android:padding="8dp"
+            android:background="@color/pale_blue"
+            app:layout_constraintEnd_toEndOf="@+id/tv_title"
+            app:layout_constraintStart_toStartOf="@+id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            app:srcCompat="@drawable/ic_place_holder" />
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/pale_blue"
+            android:text="@string/btn_camera"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/btn_gallery"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/iv_addStories"
+            app:layout_constraintTop_toBottomOf="@+id/iv_addStories" />
+
+        <Button
+            android:id="@+id/btn_gallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/pale_blue"
+            android:text="@string/btn_gallery"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/iv_addStories"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_camera"
+            app:layout_constraintTop_toBottomOf="@+id/iv_addStories" />
+
+        <EditText
+            android:id="@+id/edt_addStory_desc"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="32dp"
+            android:autofillHints="Description"
+            android:background="@drawable/description_border"
+            android:gravity="top|left"
+            android:hint="@string/tell"
+            android:inputType="textMultiLine"
+            android:maxHeight="180dp"
+            android:maxLines="8"
+            android:padding="15dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_addStories"
+            app:layout_constraintStart_toStartOf="@+id/iv_addStories"
+            app:layout_constraintTop_toBottomOf="@+id/btn_camera"
+            tools:ignore="RtlHardcoded" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_addStories"
+            app:layout_constraintEnd_toEndOf="@+id/iv_addStories"
+            app:layout_constraintStart_toStartOf="@+id/iv_addStories"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
